@@ -24,4 +24,12 @@ for repo_dict in repo_dicts:
     repo_names.append(repo_dict["name"])
     stars.append(repo_dict["stargazers_count"])
 
-    
+
+figure = ex.bar(
+    x=repo_names,
+    y=stars,
+    title="Most-Starred Java Projects on GitHub",
+    labels={"x": "Repository", "y": "Stars"},
+    color=stars,
+    color_continuous_scale="Viridis",
+)
