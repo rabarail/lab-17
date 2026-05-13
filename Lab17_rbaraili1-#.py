@@ -15,3 +15,8 @@ print(f"Status code: {r.status_code}")
 
 response_dict = r.json()
 repo_dicts = response_dict["items"]
+
+repo_names = []
+stars = []
+hover_text = []
+  
