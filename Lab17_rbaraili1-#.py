@@ -33,3 +33,6 @@ figure = ex.bar(
     color=stars,
     color_continuous_scale="Viridis",
 )
+
+fig.update_layout(title_x=0.5)
+fig.write_html("java_repos.html")
