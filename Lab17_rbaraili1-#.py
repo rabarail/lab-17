@@ -8,3 +8,8 @@ import requests
 import plotly.express as ex
 
 
+url = "https://api.github.com/search/repositories?q=language:java&sort=stars"
+
+r = requests.get(url)
+print(f"Status code: {r.status_code}")
+
