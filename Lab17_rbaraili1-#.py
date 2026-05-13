@@ -20,3 +20,8 @@ repo_names = []
 stars = []
 hover_text = []
   
+for repo_dict in repo_dicts:
+    repo_names.append(repo_dict["name"])
+    stars.append(repo_dict["stargazers_count"])
+
+    
